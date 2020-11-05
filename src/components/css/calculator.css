@@ -1,0 +1,59 @@
+.Calculator{
+    width: 40vh;
+    height: 65vh;
+    padding:5px;
+
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+}
+.Calculator .display{
+    background-color: #eee;
+
+    flex:1 1 15%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; 
+}
+.Calculator .display .equation{
+    align-self: flex-start;
+    justify-content: flex-start;
+    
+}
+
+
+.button-container{
+    flex:1 1 85%;
+    width: 40vh;
+    height: 55vh;
+    background-color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button-container button{
+    flex: 1 1 25%;
+    border-radius: 50%;
+    border: black solid 1px;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 4vw;
+    
+    cursor: pointer;
+}
+
+.button-container >  button:hover{
+    opacity: .8;
+    color: rgba(14, 13, 13, 0.753) ;
+}
+.button-container button:active{
+    transform: scale(0.98);
+}
+.button-container button:focus{
+    outline: none;
+}
+
